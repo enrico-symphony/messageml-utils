@@ -54,7 +54,7 @@ public class Checkbox extends GroupedElement implements LabelableElement{
         setAttribute(item.getNodeName(), getStringAttribute(item));
         break;
       case ID_ATTR:
-        if(format != FormatEnum.PRESENTATIONML){
+        if(this.format != FormatEnum.PRESENTATIONML){
           throwInvalidInputException(item);
         }
         fillAttributes(parser, item);
